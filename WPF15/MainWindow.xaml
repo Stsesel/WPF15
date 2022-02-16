@@ -1,0 +1,213 @@
+﻿<Window x:Class="WPF15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1100" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="95*"/>
+            <ColumnDefinition Width="169*"/>
+        </Grid.ColumnDefinitions>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />            
+        </Grid.RowDefinitions>-->
+
+        <!--<DocumentViewer x:Name="documentViewer">
+            <FixedDocument>
+                <PageContent>
+                    <FixedPage>
+                        <TextBlock Text="Hello" FontSize="40"/>
+                    </FixedPage>
+                </PageContent>
+            </FixedDocument>
+        </DocumentViewer>-->
+
+
+
+
+        <FlowDocumentScrollViewer Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph>
+
+
+                    <Span Background="LightGray"></Span>
+
+                    <Bold>
+                        Wie vorher, nur anders: Eisstadion in Davos von Marques Architekten
+                    </Bold>
+                    <Hyperlink NavigateUri="https://www.detail.de/artikel/wie-vorher-nur-anders-eisstadion-in-davos-von-marques-architekten/r">
+                    </Hyperlink>
+                    <Floater Width="500" HorizontalAlignment="Center">
+                        <BlockUIContainer>
+                            <Image Source="Data/1.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+
+
+                </Paragraph>
+
+                <Paragraph>
+                    Bei ihrer Erneuerung der Eissportarena im Schweizer Skiort Davos setzen Marques Architekten auf Kontinuität und eine Reduktion der Mittel: Sichtbeton und Holz prägen Innenräume und Gebäudehülle, das Dachtragwerk blieb weitgehend erhalten. Große Teile der Tribünen und Fassaden sowie ein Umgang im ersten Obergeschoss sind dagegen neu.
+                </Paragraph>
+
+                <Paragraph>
+                    Weitere Informationen:
+                </Paragraph>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Bauleitung: Baulink
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            HKLS-Planung: Eicher + Pauli
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Elektroplanung: Elkom Parter
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Brandschutz: Amstein + Walthert
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Bauphysik: RSP Bauphysik
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Lichtplanung: Ch. Keller Design
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+
+
+
+
+                <Section FontSize="14">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="30*"/>
+                            <TableColumn Width="50*"/>
+                        </Table.Columns>
+
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Bauherr:
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Gemeinde Davos
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Generalplanung:
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Marques Architekten
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Tragwerksplanung:
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Conzett Bronzini Partner
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Standort:
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Eisbahnstrasse 5, 7270 Davos (CH)
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Text:
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Jakob Schoof
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+
+
+
+                    </Table>
+                </Section>
+
+                <Section FontSize="10">
+                    <Paragraph>
+                        1960 entstand in dem Schweizer Skiort Davos eine erste Kunsteisbahn. Über die Jahrzehnte wurde daraus ein veritables Eisstadion, das für die Eishockeyspiele des HC Davos ebenso genutzt wird wie für Eiskunstlauf und das internationale Eishockeyturnier „Spengler-Cup“. Auch für das World Economic Forum, das alljährlich hier in Graubünden stattfindet, wird die Arena genutzt. Seine heutige Silhouette erhielt das Eisstadion Ende der 70er-Jahre, als die Eisbahn mit einem Holzdach überbaut wurde. 1981 kam eine Fassade aus Polycarbonatplatten hinzu.
+An deren Stelle haben Marques Architekten nun eine Konstruktion aus Holz und Glas gesetzt. Die Nord- und Südgiebel erhielten Glasfassaden und die Nord- und Südseite eine fein gegliederte, dunkel imprägnierte Holzverschalung. Im ersten Obergeschoss fügten die Architekten der Halle einen rundum laufenden Umgang hinzu, der die Erschließung der Zuschauerränge deutlich verbessert. Den Nordflügel der ursprünglich symmetrischen Halle haben sie kaum merklich verlängert, um das vergrößerte Raumprogramm und einen neuen Haupteingang zu schaffen. Ein separater Eingang für Gästeteams befindet sich auf der Südseite.
+In Zusammenarbeit mit der ETH Zürich und den Tragwerksingenieuren Conzett Bronzini Partner entwickelten Marques Architekten ein Konzept, um die monumentale Holzträgerstruktur der Halle ohne aufwändige Ertüchtigungsmaßnahmen zu erhalten. In der Halle wurden die Tribünen auf ihre Primärkonstruktion rückgebaut, räumlich optimiert und komplett in Massivholz wiederaufgebaut. Im Ost- und Westtrakt ergänzen neue Galerien mit 30 m langen Leimholzträgern die Tribünen. Im Nord- und Südflügel sind ab dem zweiten Obergeschoss Räume für die Gastronomie, Logen, Verwaltung und Medien im größtenteils roh belassenen Holzbau entstanden. In den unteren Etagen dominiert hinter der Holz-Glas-Hülle dagegen vor
+                    </Paragraph>
+                </Section>
+
+
+                <BlockUIContainer>
+                    <StackPanel>
+                        <Button Content="Like"/>
+                    </StackPanel>
+                </BlockUIContainer>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+
+    </Grid>
+</Window>
